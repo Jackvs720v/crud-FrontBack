@@ -1,4 +1,4 @@
-import axios from "axios"; //Importa axios para requisições HTTP
+import axios from 'axios'; //Importa axios para requisições HTTP
 
 //Cria instância do Aixos com URL base da API
 const apiClient = axios.create({
@@ -22,5 +22,4 @@ export default {
     deleteBook(id){
         return apiClient.delete(`/${id}`) //Delete para excluir livro pelo ID
     },
-
 };

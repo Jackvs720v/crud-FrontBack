@@ -1,7 +1,7 @@
 <template>
     <div class="book-list-container">
     <!--Lista de livros-->
-        <ul class="book-list">
+        <ul class="book-list">  
             <li v-for="book in books" :key="book._id" class="book-item" >
                 <span>{{ book.title }} - {{ book.author }} ({{ book.year }})</span>
                 <button @click="editBook(book)" class="edit-button">Editar</button>
@@ -11,7 +11,8 @@
     </div >
 </template>
 <script>
-import api from '../services/api' 
+import api from '../services/api'; 
+
 export default {
     data() {
         return {
@@ -30,11 +31,11 @@ export default {
             });
     },
     editBook(book){ //Emite um evento para editar um livro
-        this.Semit('edit-book',book); //Emite o evento 'edit-book'
+        this.$emit('edit-book',book); //Emite o evento 'edit-book'
     },
 },
 mounted() {
     this.fetchBooks(); //Busca os livros ao montar o componente
 },
-}
+};
 </script>
