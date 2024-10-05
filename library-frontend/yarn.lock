@@ -4145,6 +4145,15 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+"library-frontend@file:":
+  version "0.1.0"
+  resolved "file:"
+  dependencies:
+    axios "^1.7.7"
+    core-js "^3.8.3"
+    library-frontend "file:"
+    vue "^3.5.10"
+
 lilconfig@^2.0.3:
   version "2.1.0"
   resolved "https://registry.npmjs.org/lilconfig/-/lilconfig-2.1.0.tgz"

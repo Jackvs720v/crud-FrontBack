@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Conexão ao MongoDB = Banco de Dados
-mongoose.connect('mongodb+srv://edu22052016:v8MKsYY9WuJEKm55@clustereduardo.qkzgc.mongodb.net/library', { // Link que usamos para conectar no bando de dados MongoDB
+mongoose.connect('mongodb+srv://guilhermeadsrosa:pYa2tqcasis7Tblz@library.j55rp.mongodb.net/library', { // Link que usamos para conectar no bando de dados MongoDB
     useNewUrlParser: true,
     useUnifiedTopology: true, // Corrigido de 'useUnifiedTopoLogy'
 })
